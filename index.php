@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- styling css -->
     <link rel="stylesheet" href="style.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" type="text/css" href="fontawesome-5/fontawesome-css/all.css">
 </head>
 <body>
 
@@ -17,24 +19,262 @@
 <nav class="navbar">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-      <img src="https://images.freekaamaal.com/post_images/1682081199.webp" alt="" width="150" height="70" class="d-inline-block align-items-center">
-      <i class="bi bi-person-circle" id="userLogo"></i>
-      <i class="bi bi-search" id="searchBar"></i>
-      <i class="bi bi-bag-dash" id="cartBag"></i>
+      <a href="" class="fw-bold logo" >VastuRent</a>
+      <!-- user -->
+      <a href= "login.php">
+      <i class="bi bi-person-circle" id="userLogo"></i></a>
+      <!-- search -->
+      <a href=""><i class="bi bi-search" id="searchBar"></i></button></a>
+      <!-- add cart -->
+      <a href="">
+           <i class="bi bi-bag-dash" id="cartBag"></i></button></a>
+
+      
+      
     </a>
   </div>
 </nav>
 
+<div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form>
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 d-flex align-items-center">
+              <i class="bi bi-person-circle fs-3 me-2"></i>User Login
+            </h1>
+            <button type="reset" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label class="form-label">Email address</label>
+              <input type="email" class="form-control shadow-none">
+            </div>
+            <div class="mb-4">
+                <label class="form-label">Password</label>
+                <input type="password" class="form-control shadow-none">
+            </div>
+            <div class="d-flex align-items-center justify-content-between mb-2">
+                <button type="submit" class="btn btn-dark shadow-none">Login</button>
+                <a href="javascript: void(0)" class="text-secondary text-decoration-none ">Forgot Password?</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
     <!-- main page -->
     <div class="container">
-        <img src="images/home.png" class="homePage">
+        <img src="images/IMG-20240629-WA0009.JPG" class="homePage">
     </div>
+
+    <!-- category -->
+    <ul class="indicator">
+				<li data-filter="all" class="active"><a href="#">All</a></li>
+				<li data-filter="Sofa"><a href="#">Sofa</a></li>
+				<li data-filter="Bed"><a href="#">Bed</a></li>
+				<li data-filter="Dining table"><a href="#">Dining Table</a></li>
+				<li data-filter="Bed side desk"><a href="#">Bed side desk</a></li>
+			</ul>
+
+			<div class="filter-condition">
+				<span>View As a</span>
+				<select name="" id="select">
+					<option value="Default">Default</option>
+					<option value="LowToHigh">Low to high</option>
+					<option value="HighToLow">High to low</option>
+				</select>
+			</div>
+		</header>
+
+    
+		<div class="product-field">
+			<ul class="items">
+				<li data-category="" data-price="">
+					<picture>
+						<img src="image/s1..png" alt="">
+					</picture>
+					<div class="detail">
+						<p class="icon">
+						   <span><i class="far fa-heart"></i></span>
+						   <span><i class="far fa-share-square"></i></span>
+						   <span><i class="fas fa-shopping-basket"></i></span>
+						</p>
+						<strong>Sofa</strong>
+						<span>Lorem, ipsum dolor sit amet consectetur.</span>
+						<small>Rent now</small>
+					</div>
+					<h4>$45.78</h4>
+				</li>
+				<li data-category="" data-price="">
+					<picture>
+						<img src="image/b1.png" alt="">
+					</picture>
+					<div class="detail">
+						<p class="icon">
+						   <span><i class="far fa-heart"></i></span>
+						   <span><i class="far fa-share-square"></i></span>
+						   <span><i class="fas fa-shopping-basket"></i></span>
+						</p>
+						<strong>Bed</strong>
+						<span>Lorem, ipsum dolor sit amet consectetur.</span>
+						<small>Rent now</small>
+					</div>
+					<h4>$35.78</h4>
+				</li>
+				<li data-category="" data-price="">
+					<picture>
+						<img src="image/s2.png" alt="">
+					</picture>
+					<div class="detail">
+						<p class="icon">
+						   <span><i class="far fa-heart"></i></span>
+						   <span><i class="far fa-share-square"></i></span>
+						   <span><i class="fas fa-shopping-basket"></i></span>
+						</p>
+						<strong>Sofa</strong>
+						<span>Lorem, ipsum dolor sit amet consectetur.</span>
+						<small>Rent now</small>
+					</div>
+					<h4>$40.78</h4>
+				</li>
+				<li data-category="" data-price="">
+					<picture>
+						<img src="image/b2.png" alt="">
+					</picture>
+					<div class="detail">
+						<p class="icon">
+						   <span><i class="far fa-heart"></i></span>
+						   <span><i class="far fa-share-square"></i></span>
+						   <span><i class="fas fa-shopping-basket"></i></span>
+						</p>
+						<strong>Bed</strong>
+						<span>Lorem, ipsum dolor sit amet consectetur.</span>
+						<small>Rent now</small>
+					</div>
+					<h4>$42.78</h4>
+				</li>
+				<li data-category="" data-price="">
+					<picture>
+						<img src="image/s4.png" alt="">
+					</picture>
+					<div class="detail">
+						<p class="icon">
+						   <span><i class="far fa-heart"></i></span>
+						   <span><i class="far fa-share-square"></i></span>
+						   <span><i class="fas fa-shopping-basket"></i></span>
+						</p>
+						<strong>Sofa</strong>
+						<span>Lorem, ipsum dolor sit amet consectetur.</span>
+						<small>Rent now</small>
+					</div>
+					<h4>$46.78</h4>
+				</li>
+				<li data-category="" data-price="">
+					<picture>
+						<img src="image/b3.png" alt="">
+					</picture>
+					<div class="detail">
+						<p class="icon">
+						   <span><i class="far fa-heart"></i></span>
+						   <span><i class="far fa-share-square"></i></span>
+						   <span><i class="fas fa-shopping-basket"></i></span>
+						</p>
+						<strong>Bed</strong>
+						<span>Lorem, ipsum dolor sit amet consectetur.</span>
+						<small>Rent now</small>
+					</div>
+					<h4>$55.78</h4>
+				</li>
+				<li data-category="" data-price="">
+					<picture>
+						<img src="image/d3.png" alt="">
+					</picture>
+					<div class="detail">
+						<p class="icon">
+						   <span><i class="far fa-heart"></i></span>
+						   <span><i class="far fa-share-square"></i></span>
+						   <span><i class="fas fa-shopping-basket"></i></span>
+						</p>
+						<strong>Dining table</strong>
+						<span>Lorem, ipsum dolor sit amet consectetur.</span>
+						<small>Rent now</small>
+					</div>
+					<h4>$25.78</h4>
+				</li>
+				<li data-category="" data-price="">
+					<picture>
+						<img src="image/d2.png" alt="">
+					</picture>
+					<div class="detail">
+						<p class="icon">
+						   <span><i class="far fa-heart"></i></span>
+						   <span><i class="far fa-share-square"></i></span>
+						   <span><i class="fas fa-shopping-basket"></i></span>
+						</p>
+						<strong>Dining table</strong>
+						<span>Lorem, ipsum dolor sit amet consectetur.</span>
+						<small>Rent now</small>
+					</div>
+					<h4>$20.78</h4>
+				</li>
+				<li data-category="" data-price="">
+					<picture>
+						<img src="image/d1.png" alt="">
+					</picture>
+					<div class="detail">
+						<p class="icon">
+						   <span><i class="far fa-heart"></i></span>
+						   <span><i class="far fa-share-square"></i></span>
+						   <span><i class="fas fa-shopping-basket"></i></span>
+						</p>
+						<strong>Dining table</strong>
+						<span>Lorem, ipsum dolor sit amet consectetur.</span>
+						<small>Rent now</small>
+					</div>
+					<h4>$15.78</h4>
+				</li>
+				<li data-category="" data-price="">
+					<picture>
+						<img src="image/d4.png" alt="">
+					</picture>
+					<div class="detail">
+						<p class="icon">
+						   <span><i class="far fa-heart"></i></span>
+						   <span><i class="far fa-share-square"></i></span>
+						   <span><i class="fas fa-shopping-basket"></i></span>
+						</p>
+						<strong>Dining table</strong>
+						<span>Lorem, ipsum dolor sit amet consectetur.</span>
+						<small>Rent now</small>
+					</div>
+					<h4>$22.78</h4>
+				</li>
+				<li data-category="" data-price="">
+					<picture>
+						<img src="image/z1.png" alt="">
+					</picture>
+					<div class="detail">
+						<p class="icon">
+						   <span><i class="far fa-heart"></i></span>
+						   <span><i class="far fa-share-square"></i></span>
+						   <span><i class="fas fa-shopping-basket"></i></span>
+						</p>
+						<strong>Bed side desk</strong>
+						<span>Lorem, ipsum dolor sit amet consectetur.</span>
+						<small>Rent now</small>
+					</div>
+					<h4>$33.78</h4>
+				</li>
+			</ul>
+
 
     <!-- chat button -->
     <button type="button" class="btn message-us-button" id="messageUsButton" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
     <a href="" class="text-decoration-none text-white"><i class="bi bi-chat-left-dots"></i>Message</a>
     </button>
-    <!-- modal -->
+    
     
 
     <!-- footer -->
