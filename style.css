@@ -1,0 +1,48 @@
+
+
+#userLogo{
+    margin-left: 950px;
+    font-size: 30px; 
+    color: black;  
+}
+
+#searchBar{
+    font-size: 30px;
+    margin-left: 20px;
+    color: black; 
+}
+
+#cartBag{
+    font-size: 30px;
+    margin-left: 20px;
+    color: black; 
+}
+
+.homePage{
+    height: 485px;
+    width: 1000px;
+    margin-left: 30px;
+}
+
+#footer{
+    background-color: bisque;
+}
+
+.message-us-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: red; /* Choose your desired color */
+    color: white;
+    padding: 10px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 1000; /* Ensure it's above other content */
+  }
+  
+  .message-us-button:hover {
+    background-color: #f34f4f; /* Darker shade for hover effect */
+  }
+
+  
